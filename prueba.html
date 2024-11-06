@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Band Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-amber-300 font-sans">
+    <div class="bg-gray-800 p-4 text-white shadow-lg relative z-20">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold tracking-wider text-amber-500">BAND</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-amber-500">HOME</a>
+                <a href="#band" class="hover:text-amber-500">BAND</a>
+                <a href="#tour" class="hover:text-amber-500">TOUR</a>
+                <a href="#contact" class="hover:text-amber-500">CONTACT</a>
+                <div class="relative group">
+                    <button class="hover:text-amber-500 flex items-center">MORE <i class="fa fa-caret-down ml-1"></i></button>
+                    <div class="absolute left-0 hidden group-hover:flex flex-col bg-gray-700 text-white p-2 rounded shadow-lg space-y-1 z-50">
+                        <a href="#" class="hover:text-red-500">Merchandise</a>
+                        <a href="#" class="hover:text-red-500">Extras</a>
+                        <a href="#" class="hover:text-red-500">Media</a>
+                    </div>
+                </div>
+            </nav>
+            <button class="md:hidden text-2xl text-amber-300"><i class="fa fa-bars"></i></button>
+        </div>
+    </div>
+    
+    <div id="navDemo" class="md:hidden bg-gray-700 text-white p-4 space-y-2">
+        <a href="#band" class="block hover:text-amber-500">BAND</a>
+        <a href="#tour" class="block hover:text-amber-500">TOUR</a>
+        <a href="#contact" class="block hover:text-amber-500">CONTACT</a>
+        <a href="#" class="block hover:text-amber-500">MERCH</a>
+    </div>
+
+    <div class="container mx-auto py-8 space-y-8">
+        <div class="relative overflow-hidden">
+            <img src="LA.jpg" alt="Los Angeles" class="w-full">
+            <div class="absolute inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center p-6 z-10">
+                <div class="text-center text-white">
+                    <h3 class="text-2xl font-bold">Los Angeles</h3>
+                    <p class="mt-2"><b>We had the best time playing at Venice Beach!</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative overflow-hidden">
+            <img src="NY.jpg" alt="New York" class="w-full">
+            <div class="absolute inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center p-6 z-10">
+                <div class="text-center text-white">
+                    <h3 class="text-2xl font-bold">New York</h3>
+                    <p class="mt-2"><b>The atmosphere in New York is lorem ipsum.</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative overflow-hidden">
+            <img src="ch.jpg" alt="Chicago" class="w-full">
+            <div class="absolute inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center p-6 z-10">
+                <div class="text-center text-white">
+                    <h3 class="text-2xl font-bold">Chicago</h3>
+                    <p class="mt-2"><b>Thank you, Chicago - A night we won't forget.</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="band" class="text-center space-y-4 border border-amber-500 p-6 rounded-lg">
+            <h2 class="text-3xl font-bold">THE BAND</h2>
+            <p class="italic">We love music</p>
+            <p class="max-w-xl mx-auto">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <div class="grid md:grid-cols-3 gap-8 mt-8">
+                <div class="text-center">
+                    <p class="font-bold">Name</p>
+                    <img src="neg.jpg" alt="Band Member" class="w-48 h-48 mx-auto rounded-full">
+                </div>
+                <div class="text-center">
+                    <p class="font-bold">Name</p>
+                    <img src="mes.jpg" alt="Band Member" class="w-48 h-48 mx-auto rounded-full">
+                </div>
+                <div class="text-center">
+                    <p class="font-bold">Name</p>
+                    <img src="ca.jpg" alt="Band Member" class="w-48 h-48 mx-auto rounded-full">
+                </div>
+            </div>
+        </div>
+
+        <div id="tour" class="text-center space-y-4 border border-amber-500 p-6 rounded-lg">
+            <h2 class="text-3xl font-bold">TOUR DATES</h2>
+            <p class="italic">Remember to book your tickets!</p>
+            <ul class="mt-4 space-y-1">
+                <li>September <span class="text-white">Sold out</span></li>
+                <li>October <span class="text-white">Sold out</span></li>
+                <li>November <span class="text-green-500">3</span></li>
+            </ul>
+            <div class="grid md:grid-cols-3 gap-8 mt-8">
+                <div class="text-center">
+                    <div class="p-4">
+                        <p class="font-bold">New York</p>
+                        <p>Fri 27 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="mt-4 px-4 py-2 bg-red-600 text-white rounded">Buy Tickets</button>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="p-4">
+                        <p class="font-bold">Paris</p>
+                        <p>Sat 28 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="mt-4 px-4 py-2 bg-red-600 text-white rounded">Buy Tickets</button>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="p-4">
+                        <p class="font-bold">San Francisco</p>
+                        <p>Sun 29 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="mt-4 px-4 py-2 bg-red-600 text-white rounded">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="text-center space-y-4 border border-amber-500 p-6 rounded-lg">
+            <h2 class="text-3xl font-bold">CONTACT</h2>
+            <p class="italic">Fan? Drop a note!</p>
+            <div class="flex flex-col gap-8 mt-8 items-center">
+                <div class="text-left">
+                    <p><i class="fa fa-map-marker"></i> Chicago, US</p>
+                    <p><i class="fa fa-phone"></i> Phone: +00 151515</p>
+                    <p><i class="fa fa-envelope"></i> Email: mail@mail.com</p>
+                </div>
+                <div class="flex-1">
+                    <form  class="space-y-4">
+                        <input type="text" class="w-full p-2 rounded">
+                        <input type="text" class="w-full p-2 rounded">
+                        <textarea class="w-full p-2 rounded h-32"></textarea>
+                        <button type="submit" class="w-full py-2 bg-red-600 text-white rounded">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-gray-800 text-white text-center p-6">
+            <p>&copy; 2024 Band Name. All Rights Reserved.</p>
+            <div class="mt-4">
+                <a href="#" class="mx-2 hover:text-amber-500"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="mx-2 hover:text-amber-500"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="mx-2 hover:text-amber-500"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="mx-2 hover:text-amber-500"><i class="fa fa-youtube"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
